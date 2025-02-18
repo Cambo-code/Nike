@@ -1,0 +1,13 @@
+/* TailWind css version 4.o*/
+@import "tailwindcss";
+
+.bg-input {
+  background-image: url("../src/assets/images/collection-background.svg");
+}
+.bg-card {
+  background-image: url("../src/assets/images/thumbnail-background.svg");
+}
+.max-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}

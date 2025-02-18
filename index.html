@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel=" icon" type="image/svg" href="./src/assets/icons/favicon.ico" />
+    <title>Combo-Nike-Working</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./src/input.css" />
+  </head>
+
+  <body>
+    <main class="relative">
+      <section id="nav">
+        <!-- Nav -->
+        <header class="sm:px-16 px-8 py-8 absolute w-full z-10">
+          <nav class="flex justify-between items-center max-w-[1440px] m-auto">
+            <a href=" #">
+              <img
+                src="./src/assets/images/header-logo.svg"
+                alt="Logo"
+                width="130"
+                height="29"
+              />
+            </a>
+            <ul
+              class="flex-1 flex font-mono justify-center items-center gap-16 max-lg:hidden"
+            >
+              <li>
+                <a
+                  href="#nav"
+                  class="text-xl text-gray-500 hover:text-amber-500"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="assets/sections/PopularProducts.php"
+                  class="text-xl hover:underline text-gray-500 hover:text-amber-500"
+                >
+                  Products
+                </a>
+              </li>
+              <li>
+                <a
+                  href=" #"
+                  class="text-xl hover:underline text-gray-500 hover:text-amber-500"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href=" #"
+                  class="text-xl hover:underline text-gray-500 hover:text-amber-500"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href=" #"
+                  class="text-xl hover:underline text-gray-500 hover:text-amber-600"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href=" #"
+                  class="text-xl hover:underline text-gray-500 hover:text-amber-600"
+                  >Acount</a
+                >
+              </li>
+            </ul>
+            <div class="hidden max-lg:block">
+              <img
+                src="./src/assets/icons/menu-outline.svg"
+                alt="menu"
+                width="25"
+                height="25"
+              />
+            </div>
+          </nav>
+        </header>
+      </section>
+
+      <section class="sm:p-1 p-0">
+        <!-- Section Header -->
+        <section
+          id="home"
+          class="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-w-[1440px] m-auto"
+        >
+          <div
+            class="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:sm:px-16 px-8 pt-28"
+          >
+            <p class="text-xl font-sans text-red-400">Our Summer Collection</p>
+
+            <h1
+              class="text-6xl font-bold mt-8 font-serif max-sm:text-5xl leading-16"
+            >
+              <span class="xl:whitespace-nowrap relative z-10 pr-10">
+                The New Arrivals
+              </span>
+              <br />
+              <span class="text-red-500">Nike </span>Shoes
+            </h1>
+
+            <p
+              class="font-sans text-gray-500 text-lg leading-8 mt-4 mb-10 sm:max-w-sm"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              voluptates.
+            </p>
+
+            <!-- Button -->
+            <a href=""
+              ><button
+                label="Shop Now"
+                class="flex justify-cenqter items-center gap-4 px-7 py-4 border-2 text-lg font-mono leading-none bg-red-400 rounded-full text-white hover:bg-red-500 border-red-500"
+              >
+                <div>Shop Now</div>
+                <img
+                  src="./src/assets/icons/arrow-right.svg"
+                  alt="Arrow Right"
+                  class="ml-2 rounded-full w-5 h-5 bg-white"
+                /></button
+            ></a>
+
+            <div
+              class="flex justify-start items-start flex-wrap w-full mt-20 gap-16"
+            >
+              <div>
+                <p class="text-4xl font-mono font-bold">1K+</p>
+                <p class="font-mono text-gray-500 leading-7">Brands</p>
+              </div>
+              <div>
+                <p class="text-4xl font-mono font-bold">500+</p>
+                <p class="font-mono text-gray-500 leading-7">Shops</p>
+              </div>
+              <div>
+                <p class="text-4xl font-mono font-bold">250K+</p>
+                <p class="font-mono text-gray-500 leading-7">Customers</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="relative xl:min-h-screen max-xl:py-40 bg-center bg-cover flex justify-center items-center flex-1 bg-input"
+          >
+            <img
+              src="./src/assets/images/big-shoe1.png"
+              alt="Shoe1"
+              class="object-contain relative z-10"
+              width="400"
+              height="300"
+              id="mainImage"
+            />
+
+            <div>
+              <div
+                class="flex gap-4 sm:gap-6 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6"
+              >
+                <button
+                  id="shoe1"
+                  class="flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4 hover:border-red-400 hover:border-2 border-transparent hover:scale-105 hover:p-2 transition duration-300 ease-in-out"
+                >
+                  <img
+                    src="./src/assets/images/thumbnail-shoe1.svg"
+                    alt=""
+                    class="object-contain"
+                    width="127"
+                    height="103"
+                  />
+                </button>
+                <button
+                  id="shoe2"
+                  class="flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4 hover:border-red-400 hover:border-2 border-transparent hover:scale-105 hover:p-2 transition duration-300 ease-in-out"
+                  ​
+                >
+                  <img
+                    src="./src/assets/images/thumbnail-shoe2.svg"
+                    alt=""
+                    class="object-contain"
+                    width="127"
+                    height="103"
+                  />
+                </button>
+                <button
+                  id="shoe3"
+                  class="flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4 hover:border-red-400 hover:border-2 border-transparent hover:scale-105 hover:p-2 transition duration-300 ease-in-out"
+                  ​
+                  ​
+                >
+                  <img
+                    src="./src/assets/images/thumbnail-shoe3.svg"
+                    alt=""
+                    class="object-contain"
+                    width="127"
+                    height="103"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="sm:px-16 px-8 sm:py-24 py-10" id="products">
+        <!-- Porolar Products -->
+        <section id="products" class="max-container sm:mt-12 max-sm:mt-12">
+          <div class="flex flex-col justify-start gap-5">
+            <h2 class="text-4xl font-mono font-bold">
+              Our <span class="text-red-400">Popular</span> Products
+            </h2>
+            <p
+              class="mt-2 font-sans text-gray-500 sm:text-base md:text-lg lg:text-xl w-1/2"
+            >
+              Check out our most popular products that customers love! <br />
+              From the latest sneakers to trendy apparel, find your favorites
+              and stay ahead in style.
+            </p>
+          </div>
+
+          <div
+            class="mt-12 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-6 gap-14"
+          >
+            <div
+              class="flex flex-1 flex-col w-full max-sm:w-full hover:shadow-red-400 shadow-xl p-4 border rounded-2xl border-gray-200 hover:scale-105 transition duration-300 ease-in-out"
+            >
+              <img
+                src="./src/assets/images/shoe4.svg"
+                alt="shoe4"
+                class="w-[280px] h-[280px]"
+              />
+              <div class="mt-8 flex justify-start gap-2.5">
+                <img
+                  src="./src/assets/icons/star.svg"
+                  alt="star"
+                  width="24"
+                  height="24"
+                />
+                <p class="text-xl font-sans text-gray-500">(4.5)</p>
+              </div>
+              <h3 class="mt-2 text-2xl leading-normal font-mono">
+                Nike Air Jouden-100
+              </h3>
+              <p
+                class="mt-2 text-xl text-red-500 leading-normal font-sans font-bold"
+              >
+                $220.42
+              </p>
+            </div>
+            <div
+              class="flex flex-1 flex-col w-full max-sm:w-full hover:shadow-red-400 shadow-xl p-4 border rounded-2xl border-gray-200 hover:scale-105 transition duration-300 ease-in-out"
+            >
+              <img
+                src="./src/assets/images/shoe5.svg"
+                alt="shoe5"
+                class="w-[280px] h-[280px]"
+              />
+              <div class="mt-8 flex justify-start gap-2.5">
+                <img
+                  src="./src/assets/icons/star.svg"
+                  alt="star"
+                  width="24"
+                  height="24"
+                />
+                <p class="text-xl font-sans text-gray-500">(4.5)</p>
+              </div>
+              <h3 class="mt-2 text-2xl leading-normal font-mono">
+                Nike Air Jouden-100
+              </h3>
+              <p
+                class="mt-2 text-xl text-red-500 leading-normal font-sans font-bold"
+              >
+                $220.42
+              </p>
+            </div>
+            <div
+              class="flex flex-1 flex-col w-full max-sm:w-full hover:shadow-red-400 shadow-xl p-4 border rounded-2xl border-gray-200 hover:scale-105 transition duration-300 ease-in-out"
+            >
+              <img
+                src="./src/assets/images/shoe6.svg"
+                alt="shoe6"
+                class="w-[280px] h-[280px]"
+              />
+              <div class="mt-8 flex justify-start gap-2.5">
+                <img
+                  src="./src/assets/icons/star.svg"
+                  alt="star"
+                  width="24"
+                  height="24"
+                />
+                <p class="text-xl font-sans text-gray-500">(4.5)</p>
+              </div>
+              <h3 class="mt-2 text-2xl leading-normal font-mono">
+                Nike Air Jouden-100
+              </h3>
+              <p
+                class="mt-2 text-xl text-red-500 leading-normal font-sans font-bold"
+              >
+                $220.42
+              </p>
+            </div>
+            <div
+              class="flex flex-1 flex-col w-full max-sm:w-full hover:shadow-red-400 shadow-xl p-4 border rounded-2xl border-gray-200 hover:scale-105 transition duration-300 ease-in-out"
+            >
+              <img
+                src="./src/assets/images/shoe7.svg"
+                alt="shoe7"
+                class="w-[280px] h-[280px]"
+              />
+              <div class="mt-8 flex justify-start gap-2.5">
+                <img
+                  src="./src/assets/icons/star.svg"
+                  alt="star"
+                  width="24"
+                  height="24"
+                />
+                <p class="text-xl font-sans text-gray-500">(4.5)</p>
+              </div>
+              <h3 class="mt-2 text-2xl leading-normal font-mono">
+                Nike Air Jouden-100
+              </h3>
+              <p
+                class="mt-2 text-xl text-red-500 leading-normal font-sans font-bold"
+              >
+                $220.42
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="sm:px-16 px-8 sm:py-24 py-12">
+        <!-- Super Quality -->
+        <section
+          id="about-us"
+          class="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container"
+        >
+          <div class="flex flex-1 flex-col">
+            <h2
+              class="text-4xl font-bold mt-8 font-sans max-sm:text-5xl capitalize"
+            >
+              we provide you
+              <span class="text-red-500">
+                super <br />
+                quality </span
+              >Shoes
+            </h2>
+
+            <p
+              class="mt-4 lg:max-w-lg text-lg font-sans text-gray-500 leading-7"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Quisquam, voluptates. Our shoes are crafted with the highest
+              quality materials and designed to provide maximum comfort and
+              durability. Whether you're running a marathon or just going for a
+              casual walk, our shoes will keep your feet happy and healthy.
+            </p>
+            <p
+              class="mt-6 text-lg font-sans lg:max-w-lg text-gray-500 leading-7"
+            >
+              our dedicated team of designers and engineers work tirelessly to
+              create shoes that are not only stylish and.
+            </p>
+            <div class="mt-8 flex items-center justify-start flex-wrap gap-4">
+              <a href="#">
+                <button
+                  label="Shop Now"
+                  class="flex justify-cenqter items-center gap-4 px-7 py-4 border-2 text-lg font-mono leading-none bg-red-400 rounded-full text-white hover:bg-red-500 border-red-500"
+                >
+                  <div>Shop Now</div>
+                  <img
+                    src="./src/assets/icons/arrow-right.svg"
+                    alt="Arrow Right"
+                    class="ml-2 rounded-full w-5 h-5 bg-white"
+                  />
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex flex-1 justify-center items-center">
+            <img
+              src="./src/assets/images/shoe8.svg"
+              alt="shoe8"
+              class="object-contain"
+              width="550"
+              height="500"
+            />
+          </div>
+        </section>
+      </section>
+
+      <section class="sm:px-16 px-8 sm:py-24 py-10">
+        <!-- Services -->
+        <section
+          class="max-container flex flex-wrap justify-center items-center gap-9"
+        >
+          <div
+            class="flex-1 sm:w-[35opx] sm:min-w-[350px] shadow-2xl rounded-lg px-10 py-16 w-full"
+          >
+            <div
+              class="flex w-11 h-11 bg-red-400 justify-center items-center rounded-full"
+            >
+              <img
+                src="./src/assets/icons/delivery-truck.svg"
+                alt="truck"
+                width="25"
+                height="25"
+              />
+            </div>
+            <h3 class="text-3xl mt-6 font-serif font-bold">Free shipping</h3>
+            <p class="mt-3 break-words text-lg font-sans text-gray-500">
+              Enjoy seamless shopping with our complimentary shipping service.
+            </p>
+          </div>
+          <div
+            class="flex-1 sm:w-[35opx] sm:min-w-[350px] shadow-2xl rounded-lg px-10 py-16 w-full"
+          >
+            <div
+              class="flex w-11 h-11 bg-red-400 justify-center items-center rounded-full"
+            >
+              <img
+                src="./src/assets/icons/check.svg"
+                alt="check"
+                width="25"
+                height="25"
+              />
+            </div>
+            <h3 class="text-3xl mt-6 font-serif font-bold">Secure Payment</h3>
+            <p class="mt-3 break-words text-lg font-sans text-gray-500">
+              Experience secure payment with our trusted payment gateway.
+            </p>
+          </div>
+          <div
+            class="flex-1 sm:w-[35opx] sm:min-w-[350px] shadow-2xl rounded-lg px-10 py-16 w-full"
+          >
+            <div
+              class="flex w-11 h-11 bg-red-400 justify-center items-center rounded-full"
+            >
+              <img
+                src="./src/assets/icons/hand-heart.svg"
+                alt="heart"
+                width="25"
+                height="25"
+              />
+            </div>
+            <h3 class="text-3xl mt-6 font-serif font-bold">Love to help you</h3>
+            <p class="mt-3 break-words text-lg font-sans text-gray-500">
+              Our dedicated team is here to assist you very step of the way.
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <section class="sm:px-16 px-8 sm:py-24 py-12">
+        <!-- Special Offer -->
+        <section
+          class="flex justify-wrap items-center max-xl:flex-col-reverse gap-10 max-container"
+        >
+          <div class="flex-1">
+            <img
+              src="./src/assets/images/offer.svg"
+              alt="Special Offer"
+              class="w-full object-contain"
+              width="750"
+              height="650"
+            />
+          </div>
+          <div class="flex flex-1 flex-col">
+            <h2
+              class="text-4xl font-bold mt-8 font-sans max-sm:text-5xl capitalize"
+            >
+              <span class="text-red-500"> Special </span>Offer
+            </h2>
+
+            <p
+              class="mt-4 lg:max-w-lg text-lg font-sans text-gray-500 leading-7"
+            >
+              Emberk shoes are crafted with the highest quality materials and
+              designed to provide maximum comfort and durability.
+            </p>
+            <p
+              class="mt-6 text-lg font-sans lg:max-w-lg text-gray-500 leading-7"
+            >
+              our dedicated team of designers and engineers work tirelessly to
+              create shoes that are not only stylish and.
+            </p>
+            <div class="mt-8 flex items-center justify-start flex-wrap gap-4">
+              <a
+                href="https://thesolesupplier.co.uk/news/this-paris-saint-germain-x-air-jordan-5-will-come-in-an-easy-to-style-colourway/"
+              >
+                <button
+                  type="button"
+                  class="flex justify-cenqter items-center gap-4 px-7 py-4 border-2 text-lg font-mono bg-red-400 rounded-full text-white hover:bg-red-500 border-red-500"
+                >
+                  <div>View Details</div>
+                </button>
+              </a>
+              <a href="#">
+                <button
+                  type="button"
+                  class="flex justify-cenqter items-center gap-4 px-7 py-4 border text-lg font-mono rounded-full text-gray-600 border-gray-300 hover:bg-gray-600 hover:text-white"
+                >
+                  <div>Learn more</div>
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="sm:px-16 px-8 sm:py-24 py-12">
+        <!-- Customer Riviews -->
+        <section class="max-container text-center">
+          <h3​ class="text-4xl font-bold font-sans">
+            What Our
+            <span class="text-red-500">Customer</span>
+            Say?
+          </h3​>
+          <p class="text-gray-500 text-lg mt-4 m-auto max-w-lg">
+            Hear genuine stories from our satisfied customers about their
+            wxceptional experiences with us.
+          </p>
+          <div
+            class="mt-24 flex flex-1 justify-evenly items-center max-lg:flex-col gap-14"
+          >
+            <div class="flex justify-center items-center flex-col">
+              <img
+                src="./src/assets/images/customer1.jpeg"
+                alt="customer"
+                class="object-cover w-[120px] h-[120px] rounded-full"
+              />
+              <p class="text-center mt-6 max-w-sm text-gray-500">
+                The attention to detail and the quality of the product exceeded
+                my wxpertations. Highly recommended!
+              </p>
+              <div class="mt-3 flex justify-center items-center gap-2.5">
+                <img
+                  src="./src/assets/icons/star.svg"
+                  alt="star"
+                  width="24"
+                  height="24"
+                />
+                <p class="text-xl font-sans text-gray-500">(4.5)</p>
+              </div>
+              <h3 class="mt-1 font-sans text-3xl text-center font-bold">
+                Morich Brown
+              </h3>
+            </div>
+
+            <div class="flex justify-center items-center flex-col">
+              <img
+                src="./src/assets/images/customer2.svg"
+                alt="customer"
+                class="object-cover w-[120px] h-[120px] rounded-full"
+              />
+              <p class="text-center mt-6 max-w-sm text-gray-500">
+                The products are top-notch. I am so happy with my purchase.
+                Highly recommended!
+              </p>
+              <div class="mt-3 flex justify-center items-center gap-2.5">
+                <img
+                  src="./src/assets/icons/star.svg"
+                  alt="star"
+                  width="24"
+                  height="24"
+                />
+                <p class="text-xl font-sans text-gray-500">(4.5)</p>
+              </div>
+              <h3 class="mt-1 font-sans text-3xl text-center font-bold">
+                Lota Mongeskar
+              </h3>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="sm:px-16 px-8 sm:py-24 py-12">
+        <!-- Subcribe -->
+        <section
+          class="max-container flex justify-between items-center max-lg:flex-col gap-10"
+        >
+          <h3 class="text-4xl leading-[68px] lg:max-w-md font-sans font-bold">
+            Sign Up from <span class="text-[#FF3E6C]"> Upsates </span> &
+            Newsletters
+          </h3>
+          <div
+            class="lg:max-w-[40%] full-w flex items-center max-sm:flex-col gap-5 p-2.5 sm:border sm:border-gray-400 rounded-full"
+          >
+            <input type="text" placeholder="subcribe@nike.com" class="input" />
+            <div>
+              <button
+                label="Sign Up"
+                class="flex justify-cenqter items-center gap-4 px-7 py-4 border-2 text-lg font-mono leading-none bg-red-400 rounded-full text-white hover:bg-red-500 border-red-500"
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="sm:px-16 px-8 sm:py-24 py-12 bg-black text-white">
+        <!-- Footer -->
+        <footer class="max-container">
+          <div
+            class="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col"
+          >
+            <div class="flex flex-col items-start">
+              <a href="#">
+                <img
+                  src="./src/assets/images/footer-logo.svg"
+                  alt="logo"
+                  width="150"
+                  height="50"
+                />
+              </a>
+              <p
+                class="text-gray-400 mt-5 text-base sm:max-w-sm font-sans leading-7"
+              >
+                Get shoes ready for the new term at your nearest Nike store.
+                Fine your perfect size in store. Get Rewards.
+              </p>
+              <div class="flex mt-8 items-center gap-5">
+                <div
+                  class="flex items-center justify-center w-12 h-12 bg-white rounded-full"
+                >
+                  <img
+                    src="./src/assets/icons/facebook.svg"
+                    alt="face book"
+                    width="25"
+                    height="25"
+                  />
+                </div>
+                <div
+                  class="flex items-center justify-center w-12 h-12 bg-white rounded-full"
+                >
+                  <img
+                    src="./src/assets/icons/twitter.svg"
+                    alt="twitter"
+                    width="25"
+                    height="25"
+                  />
+                </div>
+                <div
+                  class="flex items-center justify-center w-12 h-12 bg-white rounded-full"
+                >
+                  <img
+                    src="./src/assets/icons/instagram.svg"
+                    alt="instagram"
+                    width="25"
+                    height="25"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
+              <div>
+                <h4 class="text-2xl font-serif leading-normal font-medium mb-6">
+                  Producs
+                </h4>
+                <ul>
+                  <li class="text-gray-400 hover:text-gray-600">
+                    <a
+                      href="https://www.vegnonveg.com/products/air-force-1-lv8-2-bg-multi-colormulti-color-multi-color"
+                      >Air Forse 1</a
+                    >
+                  </li>
+                  <li class="text-gray-400 hover:text-gray-600">
+                    <a href="">Air Max 1</a>
+                  </li>
+                  <li class="text-gray-400 hover:text-gray-600">
+                    <a href="">Air Jodan 1</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-2xl font-serif leading-normal font-medium mb-6">
+                  Help
+                </h4>
+                <ul>
+                  <li class="text-gray-400 hover:text-gray-600">
+                    <a href="">About us</a>
+                  </li>
+                  <li class="text-gray-400 hover:text-gray-600">
+                    <a href="">FAQs</a>
+                  </li>
+                  <li class="text-gray-400 hover:text-gray-600">
+                    <a href="">How it work</a>
+                  </li>
+                  <li class="text-gray-400 hover:text-gray-600">
+                    <a href="">Payment policy</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-2xl font-serif leading-normal font-medium mb-6">
+                  Get in touch
+                </h4>
+                <ul>
+                  <li class="text-gray-400 hover:text-gray-600">
+                    <a href="">customer@nike.com</a>
+                  </li>
+                  <li class="text-gray-400 hover:text-gray-600">
+                    <a
+                      href="https://www.vegnonveg.com/products/air-force-1-lv8-2-bg-multi-colormulti-color-multi-color"
+                      >+85567215038</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex justify-between mt-24 max-sm:flex-col text-gray-400 max-sm:items-center"
+          >
+            <div
+              class="flex flex-1 justify-start items-center gap-2 font-sans cursor-pointer"
+            >
+              <img
+                src="./src/assets/icons/copyright.svg"
+                alt="copy right"
+                width="24"
+                height="24"
+                class="m-0 routnded-full"
+              />
+              <p>Copyright. Design by P.Rithy 18/02/2025</p>
+            </div>
+            <p class="font-sans cursor-pointer">Terms & Conditions</p>
+          </div>
+        </footer>
+      </section>
+    </main>
+
+    <script src="./src/main.js"></script>
+  </body>
+</html>
